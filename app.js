@@ -38,7 +38,7 @@ const serverH2 = spdy.createServer({
   // key: fs.readFileSync(__dirname + '/certificate/private.key'),
   // cert: fs.readFileSync(__dirname + '/certificate/certificate.crt'),
   key: fs.readFileSync(__dirname + '/certificate/lets-encrypt-private.pem'),
-  cert: fs.readFileSync(__dirname + '/certificate/lets-encrypt-cert.pem'),
+  cert: fs.readFileSync(__dirname + '/certificate/lets-encrypt-fullchain.pem'),
   spdy: {
     protocols: [ 'h2', 'http/1.1' ],
     plain: false,
